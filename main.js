@@ -81,5 +81,24 @@ document.querySelector("#app").innerHTML = `
             </div>
          </div>
       </section>
+      <!--- section recommendetion -->
+      <section class="section-recommend">
+         <div class="container">
+            <div class="search-box">
+               <div class="input-control">
+                  <input type="text" placeholder="Discover Delicious..." required />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+               <div class="order-menu-control">
+                  <a class="btn btn-secondary">Download Menu</a>
+                  <a class="btn btn-primary">Order Now <span>2</span></a>
+               </div>
+            </div>
+            <div class="menu-list-button">
+
+            </div>
+         </div>
+      </section>
+      
    </main>
 `;
