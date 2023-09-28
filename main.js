@@ -4,6 +4,7 @@ import bannerBowlLogo from '/chicken-black-bow.png';
 import swiggyLogo from '/swiggy-logo.svg'
 import zomatoLogo from "/zomato.svg";
 import chickenCurryLogo from "/chicken-curry.jpg"
+import chickenLogo from "/chickenCurry.png";
 
 document.querySelector("#app").innerHTML = `
    <header>
@@ -95,10 +96,174 @@ document.querySelector("#app").innerHTML = `
                </div>
             </div>
             <div class="menu-list-button">
-
+               <div class="tab-menu">
+                  <a>Veg</a>
+                  <a class="active-menu">Non-Veg</a>
+               </div>
+                <div class="tab-menu tab-menu-secondary">
+                  <a>North Indian</a>
+               </div>
+               <div class="tab-menu tab-menu-secondary">
+                  <a>South Indian</a>
+               </div>
+               <div class="tab-menu tab-menu-secondary">
+                  <a>Chines Items</a>
+               </div>
             </div>
          </div>
+
+         <div class="food-product-wrapper">
+            <div class="products-slider swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="card">
+                <div class="card-body">
+                  <div class="card-desc">
+                     <h3>Todays Special</h3>
+                     <h5>Malabar biryani</h5>
+                     <span>(Kerala Style)</span>
+                     <h6>&#8377; 185 <sub><del>&#8377; 250</del></sub></h6>
+                  </div>
+                <img  src='${bannerBowlLogo}' alt="chicken-curry" width="150"/>               
+               </div>
+             </div>
+             </div>
+
+              <div class="swiper-slide">
+               <div class="card">
+                <div class="card-body">
+                  <div class="card-desc">
+                     <h3>Todays Special</h3>
+                     <h5>Malabar biryani</h5>
+                     <span>(Kerala Style)</span>
+                     <h6>&#8377; 185 <sub><del>&#8377; 250</del></sub></h6>
+                  </div>
+                <img  src='${bannerBowlLogo}' alt="chicken-curry" width="150"/>               
+               </div>
+             </div>
+             </div>
+
+             </div>
+               <div class="swiper-pagination"></div>
+             </div> <!-- products-slider end here -->
+
+            <div class="products-list">
+               <h3>Highly Recommended</h3>
+               <div class="recommended-products">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div> 
+            </div> <!-- end recommeded products -->              
+          </div>
+         </div>
+         <!-- another recommended -->
+         <div class="container lastest-recommended">
+         <div class="products-list">
+               <h3>Highly Recommended</h3>
+               <div class="recommended-products">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="card-desc">
+                           <h5>Hyderabad <br/> Dum Biryani</h5>
+                        <h6>&#8377; 320(Kerala Style)</h6>
+                        </div>
+                     <img  src='${chickenCurryLogo}' alt="chicken-curry" width="110"/>
+                  </div>
+                  </div> 
+            </div> <!-- end recommeded products -->              
+          </div>
+          </div>
       </section>
-      
    </main>
 `;
+
+// swiper js
+var swiper = new Swiper(".mySwiper", {
+   autoplay:{
+      delay:1500,
+      disableOnInteraction:false,
+   },
+  spaceBetween: 0,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

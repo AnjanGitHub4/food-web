@@ -188,7 +188,7 @@ nav ul li a {
 /* section recommendetion */
 .section-recommend {
   padding: 1rem 0;
-  height: 50vh;
+  min-height: 50vh;
 }
 .search-box {
   margin-top: 1.5rem;
@@ -242,7 +242,183 @@ nav ul li a {
   color: #01151c;
   display: inline-block;
 }
+.menu-list-button {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: .8rem;
+}
+.active-menu {
+  background-color: #f13b3b;
+  padding: .5rem;
+}
+.tab-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 125px;
+  border: 1px solid #041b24;
+  text-align: center;
+  border-radius: 4px;
+}
+.tab-menu > a:nth-child(1){
+  text-align: center;
+  display: inline-block;
+  align-self: center;
+  margin-left: 1.25rem;
+}
+.tab-menu > a {
+  font-size: .75rem;
+  color: #9acbdd;
+  align-self: center;
+}
+ .tab-menu-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #b2b7bc;
+}
 
+.tab-menu-secondary > a {
+  font-size: .85rem;
+  text-align: center;
+  margin-left: 0 !important;
+  color: #01151c !important;
+}
+.food-product-wrapper {
+  margin-top: 2.5rem;
+  padding: .75rem;
+  padding-left: 0;
+  display: flex;
+}
+/* slider-card styles */
+.products-slider {
+  position: relative;
+  width: 35%;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.products-slider .card {
+  position: absolute;
+  width: 100%;
+  background-color: #020e13;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+}
+.products-slider .card .card-body{
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.products-slider .card .card-body .card-desc {
+  margin-top:1.5rem;
+  margin-left: 1.5rem;
+  align-self: end;
+}
+.products-slider .card .card-body .card-desc h3 {
+  color: rgb(247, 40, 98);
+}
+.products-slider .card .card-body .card-desc h5,span {
+  color: #e4dbdb;
+  font-size: 1.2rem;
+  letter-spacing: .5px;
+  font-weight: 300;
+}
+.products-slider .card .card-body > .card-desc h6 {
+  margin-top: .5rem;
+  font-size: .75rem;
+  color: #fffafa;
+}
+.card-desc span {
+  font-size: .75rem;
+  color: #ccc;
+}
+.card-desc h6 > sub {
+  color: #aeacac;
+  padding-left: .25rem;
+  font-size: .55rem;
+}
+.products-slider .card .card-body > img{
+  position: absolute;
+  width: 45%;
+  bottom:50%;
+  right: 5%;
+  transform: translateY(50%);
+  margin-bottom: .5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.products-list {
+  width: 80%;
+  overflow: hidden;
+  margin-left: 1.5rem;
+}
+.products-list h3 {
+  font-size: 1.2rem;
+}
+.recommended-products {
+  margin-top: .8rem;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.recommended-products ::-webkit-scrollbar {
+  display: none;
+}
+
+.recommended-products .card{
+  width: 250px;
+  border: .25px solid #ccc;
+  border-radius: .25rem;
+  display: inline-block;
+  gap: .5rem;
+  box-sizing: border-box;
+  transition: all .2s linear;
+}
+.recommended-products .card .card-body {
+  overflow: hidden;
+  display: flex;
+}
+.recommended-products .card .card-body .card-desc {
+  align-self: center;
+}
+.recommended-products .card .card-body .card-desc h5 {
+  margin: .25rem 0;
+  font-weight: 400;
+}
+.recommended-products .card .card-body .card-desc h6 {
+  font-size: .8rem;
+}
+
+.recommended-products .card .card-body img {
+  align-self: end;
+}
+
+
+/* swiper-css */
+.swiper-pagination-bullet{
+  background-color: #80ef50;
+} 
+.swiper-pagination-bullet-active {
+  background-color: #f2e7e7;
+}
+ /* .swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ } */
+/* latesty-recommended */
+.lastest-recommended .products-list {
+  margin-top: 1.2rem;
+  margin-left: 0;
+  width: 100%;
+}
 
 /* mobile device media query */
 @media screen and (max-width:468px) {
